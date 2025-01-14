@@ -16,7 +16,7 @@ sudo apt install python3.9
 
 ### Install your app dependencies
 
-If you will run your app directly on your host machine, follow one of these guides bellow:
+If you will run your app directly on your host machine, follow one of these guides below:
 
 - [Dotnet](./examples/dotnet/README.md)
 - [NodeJS](./examples/nodejs/README.md)
@@ -24,6 +24,8 @@ If you will run your app directly on your host machine, follow one of these guid
 If you will execute your app on Docker, follow this guide:
 
 - [Docker](./RUNNING-APP-ON-DOCKER.md)
+
+After finishing your app setup, you can already keep it running.
 
 ### Install NGINX
 
@@ -47,9 +49,9 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot;
 
 ## Configure Nginx proxy
 
-### Create a template file with your nginx server desired configuration
+### Create a template file with your nginx server's desired configuration
 
-If you want, you can get a copy of the [example.com.br](./example.com.br) file located on the root of this repository.
+If you want, you can get a copy of the [example.com.br](./example.com.br) file located at the root of this repository.
 
 ### Move/Copy the Nginx configuration file to inside your website configuration
 
@@ -79,7 +81,7 @@ sudo systemctl restart nginx
 sudo certbot --nginx -d YOUR_DOMAIN_HERE
 ```
 
-### Go to your server Public IP, and see your application runing!
+### Go to your server's Public IP and see your application running!
 
 <!-- Free SSL -->
 <!-- https://certbot.eff.org/instructions?ws=nginx&os=snap -->
