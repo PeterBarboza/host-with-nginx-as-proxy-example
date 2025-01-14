@@ -1,0 +1,10 @@
+services:
+  dotnet-app:
+    build: ./TodoApi
+    ports:
+      - 8080:8080
+    networks:
+      - host-dotnet-example-network
+
+networks:
+  host-dotnet-example-network:
